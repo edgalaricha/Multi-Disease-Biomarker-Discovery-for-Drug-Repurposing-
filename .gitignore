@@ -1,0 +1,30 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio
+.Rproj.user/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+
+# Output folders (if they contain generated results)
+data/
+images/
+MINGLE/
+NetworkAnalysisPython/
+others/
+report/
+results/
+
+
+# Quarto / R Markdown cache
+_cache/
+*_cache/
+*_files/
