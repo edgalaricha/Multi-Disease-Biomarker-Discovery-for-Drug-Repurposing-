@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+.gitignore
 
 # RStudio
 .Rproj.user/
@@ -13,6 +14,7 @@ Thumbs.db
 # Temporary files
 *.log
 *.tmp
+.sync*
 
 # Output folders (if they contain generated results)
 data/
@@ -22,6 +24,10 @@ NetworkAnalysisPython/
 others/
 report/
 results/
+renv/library/
+renv/staging/
+renv/python/
+Desktop.ini
 
 
 # Quarto / R Markdown cache
