@@ -1669,10 +1669,28 @@ add_deg_stars <- function(deg_df,
   df[o, , drop = FALSE]
 }
 
+# Function to save results supplementar table 
 
-
-
-
+save_supplementary_table <- function(data, sheet_name,
+                                     file = "Supplementary_Tables.xlsx") {
+  
+  library(openxlsx)
+  
+  if (file.exists(file)) {
+    wb <- loadWorkbook(file)
+  } else {
+    wb <- createWorkbook()
+  }
+  
+  if (sheet_name %in% names(wb)) {
+    removeWorksheet(wb, sheet_name)
+  }
+  
+  addWorksheet(wb, sheet_name)
+  writeData(wb, sheet_name, data)
+  
+  saveWorkbook(wb, file, overwrite = TRUE)
+}
 
 
 

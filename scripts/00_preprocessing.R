@@ -1,6 +1,6 @@
 # ========================================================
 # Script: 00_preprocessing.R
-# Purpose: preprocessing of data and fit the Joint Graphical Lasso (JGL) model
+# Purpose: UMAP, preprocessing of data and fit the Joint Graphical Lasso (JGL) model
 # Input: 
 # Output: Inital Transcript Data, Binary Theta Matrix for each disease
 # ========================================================
@@ -240,3 +240,6 @@ save(common_genes_after_filter, Ex_Gbm, Ex_Oligo, Ex_Astro,
      astro, gbm, oligo, 
      Theta_a, Theta_g, Theta_o,
      file = "outputs/00_preprocessing.RData")
+
+
+

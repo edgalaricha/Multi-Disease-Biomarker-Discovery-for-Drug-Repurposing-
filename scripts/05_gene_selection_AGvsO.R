@@ -2,7 +2,7 @@
 # Script: 05_Gene_Genes.R
 # Purpose:
 #   Compare and interpret gene sets consistently selected by multiple SLR-based
-#   models in the AGvsO task (Oligo vs Astro+GBM):
+#   models:
 #     - GeNeIV-derived models (best Manhattan / best Euclidean),
 #     - Baseline Elastic Net,
 #     - Twiner (angular-profile penalty).
@@ -13,7 +13,6 @@
 #     • 4-way Venn diagram of consistently selected gene sets (≥75% bootstraps)
 #     • Expression heatmap across diseases for the union of genes
 #     • Binary selection heatmap (gene × model) for a filtered gene set
-#     • Drug–Gene exploration: chord diagram and Sankey diagrams (top-5, approved-only)
 # ========================================================
 
 set.seed(138)  

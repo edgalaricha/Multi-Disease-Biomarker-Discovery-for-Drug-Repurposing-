@@ -34,3 +34,10 @@ Desktop.ini
 _cache/
 *_cache/
 *_files/
+
+outputs/triangles_count.rds
+outputs/00_preprocessing.RData
+outputs/graph_adjmatrices
+outputs/AGvsO_selected_genes.txt
+
+test.R
