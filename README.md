@@ -5,7 +5,7 @@ R scripts — Thesis “Multi-Disease Biomarker Discovery for Drug Repurposing i
 
 - `scripts/` — Analysis pipeline (R)
   - `00_preprocessing.R` — UMAP, Normalization and Joint Graphical Lasso
-  - `01_SLR_edge_info_AGvsO.R` — Sparse Logistic Regression (SLR) with edge info penalization.
+  - `01_SLR_edge_info_AGvsO.R` — Sparse Logistic Regression (SLR) with binary edge info penalization.
   - `02_SLR_GeNeIV_AGvsO.R` — Triangles Calculation and GeNeIV-single-distance based SLR.
   - `03_SLR_GeNeIV_multiDistance_AGvsO.R` — GeNeIV-multi-distance based SLR.
   - `04_SLR_twiner_AGvsO.R` — Twiner based SLR.
@@ -16,8 +16,7 @@ R scripts — Thesis “Multi-Disease Biomarker Discovery for Drug Repurposing i
   - `functions.R` - All reusable functions to run analyses end-to-end: preprocessing, model fitting, aggregation...
   - `visualization.R` - Plotting utilities only.
 - `outputs/` —
-  - `graph_adjmatrices/` — Adjacency matrices for each disease-specific network.
-  - `AGvsO_selected_genes.txt` — Final list of genes selected as biomarkers.
+  - `Supplementary_Tables.xlsx/` — Adjacency matrices for each disease-specific network, Edges Info, Triangle Counts, SLR results, DEG results.
   - `AGvsO_drug_interaction_results.tsv` — DGIdb interaction table obtained by querying the selected genes.
   - `JGL-lam10.9-lam20.001.RData` — Saved Joint Graphical Lasso results produced in `00_preprocessing.R`.
 
