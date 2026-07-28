@@ -1,5 +1,5 @@
-# Multi-Disease-Biomarker-Discovery-for-Drug-Repurposing-
-R scripts — Thesis “Multi-Disease Biomarker Discovery for Drug Repurposing in Glioma”. These scripts comprise the codebase used to run analyses in the thesis.
+# GeNeIV: A Gene Network Importance Vector for Network-Guided Penalization for multi-disease biomarker discovery in glioma.
+R scripts — These scripts comprise the codebase used to run analyses in the article.
 
 ## Folder structure
 
