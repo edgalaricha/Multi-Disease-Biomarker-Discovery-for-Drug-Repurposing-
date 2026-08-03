@@ -22,5 +22,30 @@ R scripts — These scripts comprise the codebase used to run analyses in the ar
 
 ## Information 
 - **Data:** The datasets used in this project are available in the GitHub Release **“Glioma Data”** (see the repository’s *Releases* tab).
+- **Clone the repository**
+```bash
+git clone https://github.com/edgalaricha/GeNeIV.git
+cd GeNeIV
+```
+- **Open the project:** Open `GeNeIV.Rproj` in RStudio.
+
+- **Restore the R environment**
+
+This project uses **renv** to ensure all collaborators use the same package versions.
+
+If you do not have `renv` installed:
+
+```r
+install.packages("renv")
+```
+
+Then restore the project environment:
+
+```r
+renv::restore()
+```
+
+This will install all package versions recorded in `renv.lock`.
+
 - **Entry point:** `scripts/00_preprocessing.R` **must be run first** to prepare all downstream inputs.
 - **Fast start:** `outputs/` already includes a **JGL result** so you don’t need to re-run network inference unless you want to retune λ.
